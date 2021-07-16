@@ -12,7 +12,7 @@ const ThankYou = () => (
           width: '20%',
         }}
         alt=""
-        src="https://cdn.jotfor.ms/img/Thankyou-iconV2.png?v=0.1"
+        src={`${process.env.PUBLIC_URL || ''}/img/thankyou.png`}
       />
     </div>
     <div contentEditable="true" className="col-2">
@@ -24,11 +24,10 @@ const ThankYou = () => (
           <img
             className="notActiveTyIcon"
             style={{ display: 'none' }}
-            src="https://cdn.jotfor.ms/img/Thankyou-iconV2.png?v=0.1"
+            src={`${process.env.PUBLIC_URL || ''}/img/thankyou.png`}
             alt=""
             width="153"
             height="156"
-            data-mce-src="https://cdn.jotfor.ms/img/Thankyou-iconV2.png?v=0.1"
           />
         </p>
         <div
