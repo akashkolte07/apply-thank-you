@@ -1,7 +1,14 @@
 import React from 'react';
+import './thank-you.css'
+
+const handleClick = () => {
+  setTimeout(() => {
+    window.location.href = 'https://parsons-stg.phenompro.com/global/en';
+  }, 2000);
+}
 
 const ThankYou = () => (
-  <div contentEditable="true" className="wrapper">
+  <div contentEditable="false" className="wrapper">
     <div className="col-1" contentEditable="false">
       <img
         className="tyBgImage"
@@ -15,7 +22,7 @@ const ThankYou = () => (
         src={`${process.env.PUBLIC_URL || ''}/img/thankyou.png`}
       />
     </div>
-    <div contentEditable="true" className="col-2">
+    <div contentEditable="false" className="col-2">
       <div className="thankyou-wrapper">
         <p
           className="thank-you-icon"
@@ -51,6 +58,21 @@ const ThankYou = () => (
         </div>
       </div>
     </div>
+    {/*<div className="col-3" 
+      style={{
+        textAlign: 'center',
+        marginLeft: '300px'
+      }}>
+      <button type="button" className="btn-primary"
+        onClick={() => handleClick()}
+        style={{color: '#fff',
+          backgroundColor: '#0094e3',
+          borderColor: '#0094e3',
+          width: '150px',
+          height: '40px'}}>
+          Go to Homepage
+      </button>
+    </div>*/}
   </div>
 );
 

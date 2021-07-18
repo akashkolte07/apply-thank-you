@@ -1,5 +1,6 @@
 import './App.css';
 import ThankYou from './components/ThankYou';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
